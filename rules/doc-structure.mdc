@@ -1,0 +1,37 @@
+---
+description: Documentation folder structure — productBrief, audienceProfiles, designDetails, features, specDocs, productRequirementsDocs, images. Use when creating or editing docs.
+globs: docs/**
+alwaysApply: false
+---
+
+# Documentation folder structure
+
+When creating or editing documentation under `docs/`, follow this structure and these conventions.
+
+## Where to put new docs
+
+- **PRDs** → `docs/productRequirementsDocs/`. Naming: `feature-name-prd.md` (or `capability-name-prd.md`).
+- **Specs** → `docs/specDocs/`. Naming: `feature-name-spec.md` (or `capability-name-spec.md`).
+- **Feature overviews** → `docs/features/`. One markdown file per high-level feature. Naming: `feature-name.md` (e.g. `csba.md`, `report-generation.md`).
+
+## Feature page structure
+
+Each feature page in `docs/features/` should follow the structure in the **feature-level template** (see templates/DOC-STRUCTURE-SPEC.md and templates/feature-template.md in the project root):
+
+1. **Title:** `# [Feature Name] — Feature Overview`
+2. **Intro** paragraph + **Applies to:** (routes or components) + *Related:* links to other feature pages if relevant
+3. **Features and documentation** — table with columns: Feature | Applies to | Spec / PRD. Link to `../specDocs/` and `../productRequirementsDocs/`.
+4. **How do I…?** — natural-language Q&A bullets with links to specDocs and productRequirementsDocs
+5. **Implementation reference** (optional) — links to architecture, plan, or other technical docs
+
+All links from feature pages to specs and PRDs use `../specDocs/` and `../productRequirementsDocs/`.
+
+## Other conventions
+
+- **Audience** is defined once in `docs/audienceProfiles.md`. Product brief and other docs link to it; do not duplicate audience content in productBrief.
+- **Images** used in markdown live in `docs/images/`. Reference them as `images/filename.png` from other docs under `docs/`.
+- **Style guide / design system** for prototypes lives under `docs/designDetails/` (e.g. `style-guide.md`).
+
+## Full layout reference
+
+For the complete folder tree, purpose of each file/folder, and stub content, see **templates/DOC-STRUCTURE-SPEC.md** in the project root.
