@@ -11,12 +11,19 @@ A shareable collection of **rules**, **skills**, and **templates** for product-l
 | **templates/** | Markdown templates for PRDs, specs, feature pages, and doc structure |
 | **importPrompts/** | **cursor-import.md** — one prompt containing every rule, skill, and template; paste into Cursor Chat and the AI adds all of them to the project |
 
-## Quick start (Cursor)
+## Quick start 
 
+### Cursor
 1. Open **importPrompts/cursor-import.md**.
 2. Copy the **entire** file (one long prompt with all rules, skills, and templates embedded).
 3. Paste it into Cursor Chat and say: **Add all of the following to this project.**
 4. Cursor will create `.cursor/rules/`, `.cursor/skills/`, and `templates/` and write each file (2 rules, 6 skills, 4 templates).
+
+### Claude
+1. Download the CALUDE.md file from importPrompts.  
+2. Add to your project;
+    - If your project is blank and/or doesn't already have a CLAUDE.md file, add the file to your root folder.  
+    - If you already have a CLAUDE.md file in your project, ask claude to add the contents of this file your CLAUDE.md file. This will prevent the loss of existing Claude settings.  
 
 ## Skills overview
 
@@ -44,10 +51,6 @@ The **templates/** folder is the **single source of truth**. The skills (prd-gen
 - **spec-template.md** — Spec doc with user flows (tables, Gherkin, edge cases).
 - **DOC-STRUCTURE-SPEC.md** — Full docs folder tree, purposes, link conventions, and stub content for scaffolding.
 
-## Sharing
-
-Put this repo on GitHub or GitLab and share the link. Others open **importPrompts/cursor-import.md**, copy the whole prompt, paste it into Cursor, and get all rules, skills, and templates added to their project.
-
 ## License
 
-Use and adapt as you like. If you share improvements, consider opening a PR or linking back to this repo.
+Use, share, and adapt as you like. If you share improvements, consider opening a PR or linking back to this repo.
